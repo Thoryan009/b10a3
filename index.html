@@ -17,23 +17,92 @@
         href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
 
-        <style>
-            .font-manrope{
-                font-family: "Manrope", sans-serif;
+        <!-- font awesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-primary': 'rgb(171, 239, 95)',
+                    }
+                }
             }
-        </style>
+        }
+    </script>
 </head>
 
-<body>
-   <header>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- nav part start here  -->
 
-   </header>
-   <main>
-    
-   </main>
-   <footer>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1 w-full justify-between">
+                 
+                  <a class="font-bold text-xl">
+                    <i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full"></i>
+                    Rinterio
+                </a>
+                  <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="navbar-center flex-1 hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                   
+                   
+                  </ul>
+                </div>
+                <div class="navbar-end flex-1 hidden lg:flex">
+                    
+                 
+                    <i class="fa-solid fa-magnifying-glass bg-white p-2 mr-3"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white p-2 mr-3"></i>
+                   
+                  <a class="bg-color-primary p-3 rounded-full font-bold">
+                   
+                    Button
+                    <i class="fa-solid fa-arrow-right bg-black p-1 rounded-full text-white"></i>
+                </a>
+                </div>
+              </div>
+        </nav>
+        <!-- nav part start here  -->
+    </header>
+    <main>
+      
+    </main>
+    <footer>
 
-   </footer>
+    </footer>
 </body>
 
 </html>
